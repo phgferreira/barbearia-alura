@@ -65,6 +65,10 @@ nav a {
     padding: 30px 20px;
     /* Permite que o espaçamento lateral não fuja da borda */
     box-sizing: border-box;
+
+    /* Border width style and color */
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .produtos h2 {
