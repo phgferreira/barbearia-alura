@@ -51,6 +51,7 @@ nav a {
 .produtos {
     width: 940px;
     margin: 0 auto 0 auto;
+    padding: 50px 0 50px;
 }
 
 .produtos li {
@@ -58,7 +59,12 @@ nav a {
     text-align: center;
     width: 30%;
     vertical-align: top;
-    padding: 50px 0 50px;
+    margin: 0 1.5%;
+    /* Essa adição de 20px na lateral com 30% de largura quebra e obriga a continuar o conteúdo
+       na linha de baixo, mas existe um comando que obriga esses 20px a não quebrar a borda/limite */
+    padding: 30px 20px;
+    /* Permite que o espaçamento lateral não fuja da borda */
+    box-sizing: border-box;
 }
 
 .produtos h2 {
@@ -68,10 +74,11 @@ nav a {
 
 .produto-descricao {
     font-size: 18px;
-    
+
 }
 
 .produto-preco {
     font-size: 22px;
     font-weight: bold;
+    margin: 10px 0 0;
 }
