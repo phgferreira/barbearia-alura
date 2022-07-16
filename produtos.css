@@ -48,6 +48,12 @@ nav a {
     text-decoration: none;
 }
 
+/* O hover aplica determinado estilo quando o curso do usuáiro estiver em cima do elemento */
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .produtos {
     width: 940px;
     margin: 0 auto 0 auto;
