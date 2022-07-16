@@ -1,6 +1,19 @@
 header {
     /* Muda o fundo para um cinza claro */
     background: #BBBBBB;
+    /* Adiciona 20px de espaçamento interno no top e bottom */
+    padding: 20px 0 20px;
+}
+
+/* Essa caixa é utilizada para envelopar todo o conteúdo dentro do header */
+.caixa {
+    /* position relative torna a caixa com 'posicionamento elevado' igual a <nav>,
+       porem sem o posicionamento absoluto (solto no navegador) */
+    position: relative;
+    /* Para trazer seu conteúdo para a esquerda limitamos a largura da caixa */
+    width: 940px;
+    /* Para ficar horizontamente centralizado colocarmos um espaçamento automático */
+    margin: 0 auto 0 auto;
 }
 
 nav {
@@ -10,7 +23,8 @@ nav {
             absolute: tiramos o ponto referencia dele e agora ele está solto na página
     */
     position: absolute;
-    top: 0;
+    /* Definimos a posição top mais ou menos no centro do cabeçalho */
+    top: 110px;
     right: 0;
 }
 
