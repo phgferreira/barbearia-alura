@@ -3,6 +3,17 @@ header {
     background: #BBBBBB;
 }
 
+nav {
+    /* position o 'ponto referencia' do objeto, position pode ser:
+            static: padrão
+            relative: pode move-lo mas mantendo o ponto de referencia do static
+            absolute: tiramos o ponto referencia dele e agora ele está solto na página
+    */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 nav li {
     /* Muda o display para exibir os componentes li em linha */
     display: inline;
