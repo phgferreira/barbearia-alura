@@ -1,0 +1,24 @@
+header {
+    /* Muda o fundo para um cinza claro */
+    background: #BBBBBB;
+}
+
+nav li {
+    /* Muda o display para exibir os componentes li em linha */
+    display: inline;
+    /* Adicionado margem conforme: 0 cima, 0 direira, 0 baixo, 15 pixels esquerda */
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    /* Transforma o texto todo em maiúsculo */
+    text-transform: uppercase;
+    /* Altera a cor das letras para preto (sem cor) */
+    color: #000000;
+    /* Modifica o peso da fonte. */
+    font-weight: bold;
+    /* Altera o tamanho da fonte em pixels. */
+    font-size: 22px;
+    /* Remove a linha sublinhada de decoração que vem por padrão da tag <a>. */
+    text-decoration: none;
+}
