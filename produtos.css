@@ -109,3 +109,12 @@ nav a:hover {
     font-weight: bold;
     margin: 10px 0 0;
 }
+
+footer {
+    text-align: center;
+    /* OBS: Caso a imagem de fundo não cubra todo o espaço de fundo, por padrão, a imagem será repetida
+       várias vezes até preencher o fundo do footer */
+    background: url('img/bg.jpg');
+    /* 40px top e bottom, 0 left e right */
+    padding: 40px 0;
+}
