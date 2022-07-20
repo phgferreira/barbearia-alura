@@ -77,6 +77,23 @@ nav a:hover {
     border-radius: 10px;
 }
 
+/* Quando o cursor passar por cima a borda fica dourada */
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+/* Quando estiver clicado a borda fica verde */
+.produtos li:active {
+    border-color: green;
+}
+
+/* Como especificamente o h2 já tem sua dimensão não adianta definir uma mudança de estilo no componente pai
+   que seria o li, precisa dizer que especificamente o h2 do li terá uma mudança de estilo quando o cursor
+   estiver em cima do li (li:hover) */
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
 .produtos h2 {
     font-size: 30px;
     font-weight: bold;
