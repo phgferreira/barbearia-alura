@@ -152,3 +152,30 @@ form label, form p {
 .checkbox {
     margin: 20px 0;
 }
+
+/* Existe uma força para definir qual estilo será aplicado quando existe um conflito, exemplo modelo
+   1k => style-in-line
+   100 => id
+   10 => class
+   1 => tag
+   A soma das forças vai determinar qual estilo será aplicado em um conflito
+    */
+p {
+    color: red;
+}
+
+form p {
+    color: blue;
+}
+
+.teste {
+    color: yellow;
+}
+
+p.teste {
+    color: orange;
+}
+
+#teste {
+    color: pink;
+}
