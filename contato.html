@@ -27,16 +27,45 @@
             <!-- o for permite você vincular o label ao input, a vantagem disso é que se clicar no label
                  pode-se começar a digitar no input que ele foi vinculado. Isso facilita a usabilidade -->
             <label for="nome">Nome e sobrenome</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" class="input-padrao">
 
             <label for="email">E-mail</label>
-            <input type="text" id="email">
+            <input type="text" id="email" class="input-padrao">
 
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone">
+            <input type="text" id="telefone" class="input-padrao">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="10" cols="70" id="mensagem" class="input-padrao"></textarea>
+
+            <div>
+                <p>Como prefere o nosso contato?</p>
+
+                <label for="radio-email">
+                    <input type="radio" id="radio-email" name="contato" value="E-Mail">
+                    E-Mail
+                </label>
+                
+                <label for="radio-telefone">
+                    <input type="radio" id="radio-telefone" name="contato" value="Telefone">
+                    Telefone
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" id="radio-whatsapp" name="contato" value="Whatsapp">
+                    Whatsapp
+                </label>
+                
+            </div>
+
+            <label>
+                <input type="checkbox" class="checkbox">
+                Gostaria de receber nossas novidades por e-mail?
+            </label>
 
             <!-- Esse input é necessário para enviar os dados do formulário -->
             <input type="submit" value="Enviar formulário">
+
         </form>
     </main>
 
