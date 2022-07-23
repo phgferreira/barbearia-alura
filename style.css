@@ -209,6 +209,20 @@ th, td {
     clear: left;
 }
 
+/* Esse pseudo-elemento permite estilizar a primeira letra do elemento */
+.titulo-principal:first-letter {
+    font-weight: bold;
+}
+
+/* Esses dois pseudo-elementos permite inserir um conteúdo antes e depois do elemento */
+.titulo-principal:before {
+    content: "[ ";
+}
+.titulo-principal:after {
+    content: " ]";
+}
+
+
 .principal {
     padding: 3em 0;
     background: #FEFEFE;
@@ -271,6 +285,9 @@ th, td {
 .itens {
     /* Significa que a altura da linha será 50% maior */
     line-height: 1.5;
+}
+.itens::before {
+    content: "★ ";
 }
 
 /* pseudo-classe first-child vai pegar o primeiro elemento de todos eles (last-chield ou nth-child(4) = 4º elemento ou nth-child(2n) = todos os nº pares */
