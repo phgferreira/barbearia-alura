@@ -200,6 +200,8 @@ th, td {
     font-size: 2em;
     /* Espaçamento proporcional ao tamanho da fonte */
     margin: 0 0 1em;
+    /* Limpa qualquer objeto que estiver a esquerda */
+    clear: left;
 }
 
 .principal p {
@@ -214,9 +216,18 @@ th, td {
     font-style: italic;
 }
 
+.utensilios {
+    width: 120px;
+    /* O float faz com que o objeto flutue, se desprendendo das regras de posicionamento mas a sua "sobra"
+       faz com que ele continue ocupando aquele espaço */
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
 .imagem-beneficios {
     width: 60%;
 }
+
 /* Existe uma força para definir qual estilo será aplicado quando existe um conflito, exemplo modelo
    1k => style-in-line
    100 => id
