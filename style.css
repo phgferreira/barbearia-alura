@@ -163,13 +163,15 @@ form label, form legend {
     border: none;
     border-radius: 5px;
     /* Essa propriedade faz com que qualquer transição no background demore x segundos */
-    transition: 1s background;
+    transition: 1s all;
     /* Toda vez que o cursor estiver em cima mude o ponteiro para a "mãozinha" para mostrar que é clicável */
     cursor: pointer;
 }
 
 .enviar:hover {
     background: darkorange;
+    /* Isso determina uma transformação e o scale(1.2) faz com que ele aumenta em escala de 20% */
+    transform: scale(1.2);
 }
 
 /* Existe uma força para definir qual estilo será aplicado quando existe um conflito, exemplo modelo
