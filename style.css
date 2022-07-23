@@ -209,20 +209,6 @@ th, td {
     clear: left;
 }
 
-/* Esse pseudo-elemento permite estilizar a primeira letra do elemento */
-.titulo-principal:first-letter {
-    font-weight: bold;
-}
-
-/* Esses dois pseudo-elementos permite inserir um conteúdo antes e depois do elemento */
-.titulo-principal:before {
-    content: "[ ";
-}
-.titulo-principal:after {
-    content: " ]";
-}
-
-
 .principal {
     padding: 3em 0;
     background: #FEFEFE;
@@ -286,7 +272,9 @@ th, td {
     /* Significa que a altura da linha será 50% maior */
     line-height: 1.5;
 }
-.itens::before {
+
+/* Esses dois pseudo-elementos permite inserir um conteúdo antes e depois do elemento */
+.itens:before {
     content: "★ ";
 }
 
