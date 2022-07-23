@@ -132,8 +132,7 @@ footer {
 }
 
 main {
-    width: 940px;
-    margin: 0 auto;
+
 }
 
 form {
@@ -210,6 +209,13 @@ th, td {
     clear: left;
 }
 
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .principal p {
     margin: 0 0 1em;
 }
@@ -232,10 +238,19 @@ th, td {
 
 .mapa {
     padding: 3em 0;
+    /* linear-gradient permite com duas cores mudem graduamente de uma para a outra
+       existe também o radial-gradient que faz em formato de circulo*/
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .beneficios {
     padding: 3em 0;
+    background: #888888;
 }
 
 .conteudo-beneficios {
