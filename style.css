@@ -1,3 +1,4 @@
+/* Fonte: https://fonts.google.com/ */
 @import url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 body {
     font-family: 'Montserrat', sans-serif;
@@ -231,6 +232,15 @@ th, td {
 
 .imagem-beneficios {
     width: 60%;
+}
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
 }
 
 /* Existe uma força para definir qual estilo será aplicado quando existe um conflito, exemplo modelo
