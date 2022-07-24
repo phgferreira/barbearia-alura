@@ -131,26 +131,6 @@ footer {
     margin-top: 20px;
 }
 
-/* O sinal de maior faz com que aplique somente nos p que são filhos direto da main */
-main > p {
-    background: red;
-}
-
-/* O sinal de + pega o próximo irmão p do elemento img */
-img + p {
-    background: blue;
-}
-
-/* O ~ pega todos os p que vem depois do elemento img */
-img ~ p {
-    background: yellow;
-}
-
-/* pseudo-elemento not permite excluir um elemento específico */
-.principal p:not(#missao) {
-    background: orange;
-}
-
 form {
     margin: 40px 0;
 }
@@ -223,6 +203,9 @@ th, td {
     margin: 0 0 1em;
     /* Limpa qualquer objeto que estiver a esquerda */
     clear: left;
+
+    /* com a função rgba (alpha) é possível também incrementar opacidade na definição de cor */
+    color: rgba(0,0,0, 0.3);
 }
 
 .principal {
@@ -282,6 +265,12 @@ th, td {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .itens {
